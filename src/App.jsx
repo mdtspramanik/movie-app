@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import Search from "./components/search";
+import SearchBox from "./components/SearchBox";
 import Spinner from "./components/Spinner";
+import MovieCard from "./components/MovieCard";
 
 const API_BASE_URL = "https://api.themoviedb.org/3";
 
@@ -65,7 +66,7 @@ const App = () => {
               Without the Hassle
             </h1>
 
-            <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+            <SearchBox searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
           </header>
 
           <section className="all-movies">
@@ -77,11 +78,11 @@ const App = () => {
             ) : errorMessage ? (
               <p className="text-red-500">{errorMessage}</p>
             ) : (
-              movieList.map((movie) => (
-                <p key={movie.id} className="text-white">
-                  {movie.title}
-                </p>
-              ))
+              <ul>
+                {movieList.map((movie) => (
+                  <MovieCard key={movie.id} movie={movie} />
+                ))}
+              </ul>
             )}
           </section>
         </div>
