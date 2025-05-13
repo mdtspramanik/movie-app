@@ -1,6 +1,6 @@
 # Movie App
 
-Built with React for the user interface, Appwrite for the Trending Movies Algorithm, and styled with Tailwind CSS. The project offers a sleek and modern experience for browsing and discovering movies.
+Built with React for the user interface, Appwrite for the Trending Movies Algorithm, TMDB for movie API, and styled with Tailwind CSS. The project offers a sleek and modern experience for browsing and discovering movies.
 
 ## Credit
 
