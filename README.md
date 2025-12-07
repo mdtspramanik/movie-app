@@ -4,7 +4,7 @@ Built with React for the user interface, Appwrite for the Trending Movies Algori
 
 ## Credit
 
-Tutorial by [JavaScript Mastery](https://www.youtube.com/@javascriptmastery) on YouTube.
+[Tutorial](https://youtu.be/dCLhUialKPQ) by [JavaScript Mastery](https://www.youtube.com/@javascriptmastery) on YouTube.
 
 ## How the Project Looks
 
